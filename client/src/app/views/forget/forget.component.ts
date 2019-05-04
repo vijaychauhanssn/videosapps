@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AlertService, UserService } from '../../services/index';
+import { ForgetService } from "../../services/forget.service";
 
 @Component({
   selector: 'app-forget',
@@ -6,10 +9,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./forget.component.css']
 })
 export class ForgetComponent implements OnInit {
+  
+  model: any = {};
+  loading = false;
 
-  constructor() { }
+  constructor(
+      private router: Router,
+      private auth : ForgetService,
+      private alertService: AlertService) { }
 
-  ngOnInit() {
+  ngOnInit() { }
+  
+
+
+  forgetPassword(email: string) {
+    this.auth .forgetPassword(email)
   }
-
 }

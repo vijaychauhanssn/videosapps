@@ -1,11 +1,12 @@
-# Videosapps Admin rewritten in Angular6 and Bootstrap 4
+# Videosapps Admin rewritten in Angular7 and Bootstrap 4
 
 Videos  Dashboard Admin App built using Angular 6 and Bootstrap 4
 
-This project is a port of the famous Free Admin Bootstrap Theme [Videos Admin v6.0](https://github.com/vijaychauhanssn/videosapps) to Angular6.
+This project is a port of the famous Free Admin Bootstrap Theme [Videos Admin v7.0](https://github.com/vijaychauhanssn/videosapps) to Angular7.
 
-
-## [Demo](https://videos-apps.firebaseapp.com)
+## Author
+ Vijaychauhanssn
+## [Demo](https://videosapps.herokuapp.com/)
 
 ## [Videos Admin  version](https://github.com/vijaychauhanssn/videosapps)
 

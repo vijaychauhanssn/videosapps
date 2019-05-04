@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
 
     login() {
         this.loading = true;
-         this.alertService.success('Login successful', true);
+        this.alertService.success('Login successful', true);
         this.authenticationService.login(this.model.username, this.model.password)
             .subscribe(
                 data => {

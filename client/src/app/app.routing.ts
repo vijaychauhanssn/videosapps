@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 // Import Containers
 import { DefaultLayoutComponent } from './containers/index';
 
-//import { ForgetComponent } from './views/forget/index';
+import { ForgetComponent } from './views/forget/index';
 import { LoginComponent } from './views/login/index';
 import { RegisterComponent } from './views/register/index';
 import { AuthGuard } from './guards/index';
@@ -23,6 +23,10 @@ export const routes: Routes = [
     {
     path: 'register',
     component: RegisterComponent
+    },
+    {
+      path: 'forget',
+      component: ForgetComponent
     },
     {
     path: '',

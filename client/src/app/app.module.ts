@@ -25,7 +25,8 @@ import { AppRoutingModule } from './app.routing';
 // Import containers
 import { DefaultLayoutComponent } from './containers/index';
 
-
+// services
+import { AngularFireModule } from 'angularfire2';
 
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -33,16 +34,17 @@ import { AppComponent } from './app.component';
 import { customHttpProvider } from './helpers/index';
 import { AlertComponent } from './directives/alert/index';
 import { AuthGuard } from './guards/index';
-import { AlertService, AuthenticationService, UserService, VideoService, PostsService } from './services/index';
+import { AlertService, AuthenticationService, UserService, VideoService, PostsService, ForgetService } from './services/index';
 //import { HomeComponent } from './views/home/index';
 
 import { LoginComponent } from './views/login/index';
 import { RegisterComponent } from './views/register/index';
-//import { ForgetComponent } from './views/forget/index';
+import { ForgetComponent } from './views/forget/index';
 import { AsideDirective } from './directives/aside/index';
 import { NavDropdownDirective, NavDropdownToggleDirective } from './directives/nav-dropdown/index';
 import { SidebarToggleDirective, SidebarMinimizeDirective, SidebarOffCanvasCloseDirective, MobileSidebarToggleDirective } from './directives/sidebar/index';
 //import { DashboardComponent } from './views/dashboard/index';
+
 import {
   AppAsideModule,
   AppBreadcrumbModule,
@@ -52,6 +54,14 @@ import {
 } from '@coreui/angular';
 import { FocusedDirective } from './directives/focused/index';
 
+const firebaseConfig = {
+  apiKey: "AIzaSyAkLv1M3uWZChe1jgrCUaGs4l91CI6n4x8",
+  authDomain: "events-conference.firebaseapp.com",
+  databaseURL: "https://events-conference.firebaseio.com",
+  projectId: "events-conference",
+  storageBucket: "events-conference.appspot.com",
+  messagingSenderId: "750647605647"
+}
 
 
 @NgModule({
@@ -68,7 +78,8 @@ import { FocusedDirective } from './directives/focused/index';
     MobileSidebarToggleDirective,
     NavDropdownToggleDirective,
     DefaultLayoutComponent,
-    FocusedDirective
+    FocusedDirective,
+    ForgetComponent
     
   ],
   imports: [
@@ -86,7 +97,8 @@ import { FocusedDirective } from './directives/focused/index';
     BsDropdownModule.forRoot(),
     TabsModule.forRoot(),
     ChartsModule,
-    CommonModule
+    CommonModule,
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
 
   providers: [
@@ -97,6 +109,7 @@ import { FocusedDirective } from './directives/focused/index';
   UserService,
   PostsService,
   VideoService,
+  ForgetService,
   {
   provide: LocationStrategy,
   useClass: HashLocationStrategy
