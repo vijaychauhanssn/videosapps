@@ -8,6 +8,9 @@ This project is a port of the famous Free Admin Bootstrap Theme [Videos Admin v7
  Vijaychauhanssn
 ## [Demo](https://videosapps.herokuapp.com/)
 
+![REg](https://github.com/vijaychauhanssn/videosapps/blob/master/client/src/assets/download.png) 
+![Login](https://github.com/vijaychauhanssn/videosapps/blob/master/client/src/assets/download_1.png) 
+![Home](https://github.com/vijaychauhanssn/videosapps/blob/master/client/src/assets/download_3.png) 
 ## [Videos Admin  version](https://github.com/vijaychauhanssn/videosapps)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
