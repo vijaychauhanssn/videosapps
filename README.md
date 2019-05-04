@@ -8,8 +8,6 @@ This project is a port of the famous Free Admin Bootstrap Theme [Videos Admin v7
  Vijaychauhanssn
 ## [Demo](https://videosapps.herokuapp.com/)
 
-![](https://suryaapp.000webhostapp.com/img/Vijay-Chauhan_at_Audi_Ritz_Style_Awards_2017.jpg) 
-
 ## [Videos Admin  version](https://github.com/vijaychauhanssn/videosapps)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
